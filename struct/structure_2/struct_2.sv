@@ -1,4 +1,4 @@
-module struct_2;
+module struct_2_example;
 
     typedef struct {
         int id;

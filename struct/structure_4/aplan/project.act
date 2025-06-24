@@ -1,6 +1,6 @@
 assign_1 = (
 		(1)->
-		("STRUCT_4#struct_4:action 'assign (person.id=1; person.age=30; person.info.street=2)';")
-		(struct_4.person.id = 1;
-		 struct_4.person.age = 30;
-		 struct_4.person.info.street = 2))
+		("STRUCT_4_3971#struct_4_3971:action 'assign (person.id=1; person.age=30; person.info.street=2)';")
+		(struct_4_3971.person_0.id = 1;
+		 struct_4_3971.person_0.age = 30;
+		 struct_4_3971.person_0.info.street = 2))
