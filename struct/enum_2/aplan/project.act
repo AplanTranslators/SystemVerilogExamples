@@ -1,0 +1,32 @@
+assign_1 = (
+		(1)->
+		("MAIN_0D6E#main_0d6e:action 'assign (IDLE=0)';")
+		(IDLE = 0)),
+assign_2 = (
+		(1)->
+		("MAIN_0D6E#main_0d6e:action 'assign (INITIALIZING=1)';")
+		(INITIALIZING = 1)),
+assign_3 = (
+		(1)->
+		("MAIN_0D6E#main_0d6e:action 'assign (RUNNING=5)';")
+		(RUNNING = 5)),
+assign_4 = (
+		(1)->
+		("MAIN_0D6E#main_0d6e:action 'assign (PAUSED=8)';")
+		(PAUSED = 8)),
+assign_5 = (
+		(1)->
+		("MAIN_0D6E#main_0d6e:action 'assign (STOPPED=RUNNING+3)';")
+		(STOPPED = RUNNING + 3)),
+assign_6 = (
+		(1)->
+		("MAIN_0D6E#main_0d6e:action 'assign (ERROR_OCCURRED=ERROR_CODE_BASE+1)';")
+		(ERROR_OCCURRED = ERROR_CODE_BASE + 1)),
+assign_7 = (
+		(1)->
+		("MAIN_0D6E#main_0d6e:action 'assign (WARNING_ACTIVE=(STATUS_OFFSET*2)+1)';")
+		(WARNING_ACTIVE = STATUS_OFFSET * 2 + 1)),
+assign_8 = (
+		(1)->
+		("MAIN_0D6E#main_0d6e:action 'assign (FINAL_STATE=STOPPED+INITIALIZING+IDLE)';")
+		(FINAL_STATE = STOPPED + INITIALIZING + IDLE))
