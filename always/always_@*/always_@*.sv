@@ -23,7 +23,7 @@ always @*
         end 
     else if (~write)
         begin
-            Data_out[15:1] <= Data_out[15:1];
+            Data_out[15:1] <= Data_in[15:1];
             Data_out[0] <= Write_once_status;
         end
 
