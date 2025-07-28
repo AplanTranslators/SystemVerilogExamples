@@ -22,6 +22,7 @@ module code_patch_core
     assign nopg_o = no_pg;
 
     assign real_val = 0.3;
+    assign real_val = real_val + 2;
     assign int_val = 1;
 
 

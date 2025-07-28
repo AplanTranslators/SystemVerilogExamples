@@ -12,7 +12,11 @@ assign_3 = (
 		(code_patch_core_8893.patch_enable_0 = code_patch_core_8893.si_read_i_0 & code_patch_core_8893.cfg_pat_gen_i_0)),
 assign_4 = (
 		(1)->
-		("CODE_PATCH_CORE_8893#code_patch_core_8893:action 'assign (nopg_o=no_pg; real_val=0.3; int_val=1)';")
+		("CODE_PATCH_CORE_8893#code_patch_core_8893:action 'assign (nopg_o=no_pg; real_val=0.3)';")
 		(code_patch_core_8893.nopg_o_0 = code_patch_core_8893.no_pg_0;
-		 code_patch_core_8893.real_val_0 = 0.3;
+		 code_patch_core_8893.real_val_0 = 0.3)),
+assign_5 = (
+		(1)->
+		("CODE_PATCH_CORE_8893#code_patch_core_8893:action 'assign (real_val=real_val+2; int_val=1)';")
+		(code_patch_core_8893.real_val_0 = code_patch_core_8893.real_val_0 + 2;
 		 code_patch_core_8893.int_val_0 = 1))

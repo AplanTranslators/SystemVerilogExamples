@@ -1,6 +1,6 @@
 typedef enum logic [1:0] {
-        IDLE,
-        RUNNING,
+        IDLE = 1,
+        RUNNING = 1 + IDLE,
         STOPPED
 } state_t;
 
