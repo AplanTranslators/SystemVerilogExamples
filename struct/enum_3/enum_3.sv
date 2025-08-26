@@ -12,7 +12,7 @@ module main;
     // Initial block with repeat statement
     initial begin
         current_state = IDLE;
-        if (current_state == IDLE) begin
+        if (current_state == RUNNING) begin
             start = 1;
         end
     end
