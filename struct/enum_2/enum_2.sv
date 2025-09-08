@@ -3,15 +3,14 @@ module main;
     typedef enum logic [7:0] {
         IDLE       = 0,
         INITIALIZING = 1,
-        RUNNING    = 5,
-        PAUSED     = 8,
-
-        STOPPED    = RUNNING + 3,
-        ERROR_OCCURRED = ERROR_CODE_BASE + 1,
-        WARNING_ACTIVE = (STATUS_OFFSET * 2) + 1,
-        FINAL_STATE = STOPPED + INITIALIZING + IDLE
+        RUNNING    = 3,
+        PAUSED     = 4,
+        STOPPED    = INITIALIZING + PAUSED ,
+        ERROR_CODE_BASE = STOPPED + INITIALIZING + RUNNING
     } system_state_t;
 
     system_state_t current_state;
+
+    current_state = ERROR_CODE_BASE;
 
 endmodule
