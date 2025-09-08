@@ -13,8 +13,12 @@ module code_patch_core
     reg [21:0]              no_pg[3];
     real real_val;
     int int_val;
-    int val1 = 0;
 
+    // Multiple variable declarations and assignments
+    int a, b, c;
+    int a1, b1, b2  = 2; // Note: 'b2' is assigned a value, 'a1' and 'b1' are just declared.
+    
+    int val1 = 0;
 
 
     patch_enable = si_read_i & cfg_pat_gen_i;
