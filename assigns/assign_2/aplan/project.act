@@ -1,0 +1,12 @@
+assign_1 = (
+		(1)->
+		("SIMPLE_ADDER_EXAMPLE_9820#simple_adder_example_9820:action 'assign (temp_sum={0,a}+{0,b})';")
+		(simple_adder_example_9820.temp_sum_0 = 0 simple_adder_example_9820.a_0 + 0 simple_adder_example_9820.b_0)),
+assign_2 = (
+		(1)->
+		("SIMPLE_ADDER_EXAMPLE_9820#simple_adder_example_9820:action 'assign (sum_out=temp_sum[7:0])';")
+		(simple_adder_example_9820.sum_out_0 = simple_adder_example_9820.temp_sum_0(7 ,0))),
+assign_3 = (
+		(1)->
+		("SIMPLE_ADDER_EXAMPLE_9820#simple_adder_example_9820:action 'assign (carry_out=temp_sum[8])';")
+		(simple_adder_example_9820.carry_out_0 = simple_adder_example_9820.temp_sum_0(8)))

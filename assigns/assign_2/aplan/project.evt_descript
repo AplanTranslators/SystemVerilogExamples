@@ -1,0 +1,4 @@
+events(
+	s_a_0:obj(x1:Bits 8);
+	s_b_0:obj(x1:Bits 8);
+);
